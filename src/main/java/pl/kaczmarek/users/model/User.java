@@ -17,7 +17,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Table(name = "Users")
-public class UserEntity {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -39,12 +39,12 @@ public class UserEntity {
     @Column(name = "phone")
     private String phone;
 
+    public User() {
 
-    private UserEntity() {
     }
 
-    public static UserEntity getInstance(){
-        return new UserEntity();
+    public static User getInstance(){
+        return new User();
     }
 
     public long getId() {

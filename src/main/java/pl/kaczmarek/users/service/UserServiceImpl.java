@@ -3,7 +3,7 @@ package pl.kaczmarek.users.service;
 
 import org.springframework.stereotype.Service;
 import pl.kaczmarek.users.dao.UserRepository;
-import pl.kaczmarek.users.model.UserEntity;
+import pl.kaczmarek.users.model.User;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -22,7 +22,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void add_user(String imie, String nazwisko, String email, String phone) {
-        UserEntity user = UserEntity.getInstance();
+        User user = User.getInstance();
         user.setFirstName(imie);
         user.setLastName(nazwisko);
         user.setEmail(email);
