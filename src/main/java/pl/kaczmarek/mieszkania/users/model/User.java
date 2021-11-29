@@ -1,4 +1,4 @@
-package pl.kaczmarek.users.model;
+package pl.kaczmarek.mieszkania.users.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

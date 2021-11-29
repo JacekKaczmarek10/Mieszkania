@@ -1,9 +1,9 @@
-package pl.kaczmarek.users.service;
+package pl.kaczmarek.mieszkania.users.service;
 
 
 import org.springframework.stereotype.Service;
-import pl.kaczmarek.users.dao.UserRepository;
-import pl.kaczmarek.users.model.User;
+import pl.kaczmarek.mieszkania.users.dao.UserRepository;
+import pl.kaczmarek.mieszkania.users.model.User;
 
 @Service
 public class UserServiceImpl implements UserService {

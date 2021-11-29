@@ -1,4 +1,4 @@
-package pl.kaczmarek.users;
+package pl.kaczmarek.mieszkania.users;
 
 public class TestClass {
 

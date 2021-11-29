@@ -1,4 +1,4 @@
-package pl.kaczmarek.users.controller;
+package pl.kaczmarek.mieszkania.users.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.validation.Valid;
 
-import pl.kaczmarek.users.model.User;
-import pl.kaczmarek.users.service.UserServiceImpl;
+import pl.kaczmarek.mieszkania.users.model.User;
+import pl.kaczmarek.mieszkania.users.service.UserServiceImpl;
 
 @Controller
 public class UserController {
@@ -27,8 +27,9 @@ public class UserController {
     }
 
     @GetMapping("/showAddUserForm")
-    public String showAddUserFrom(){
-
+    public String showAddUserFrom(Model model){
+        User user = new User();
+        model.addAttribute("user",user);
         return "add_user";
     }
 }
